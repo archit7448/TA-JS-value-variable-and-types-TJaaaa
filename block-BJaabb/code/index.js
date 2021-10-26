@@ -6,21 +6,60 @@
 4. Now change the value of `user` to `John` and log the value of both `user` and `userName`.
 */
 
+var user = prompt("enter your name")
+alert(user)
+var userName = user
+console.log(user)
+console.log(userName)
+var age = 22,isLearning = true ;
+user = "john"
+console.log(user) 
+console.log(userName)
+
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
+
+var numA = Number(prompt("enter number 1"))
+var numB = Number(prompt("enter a number 2"))
+var sum = numA + numB
+console.log(sum)
 
 // Loops
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; ____) console.log(j);
+for (let j = 0; j <= 10;j= j+2) console.log(j);
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
 
+for(let i = 9 ; i > 0 ;i = i-1 ){
+    console.log(i)
+}
+
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
 
+let Concat = ""
+let i = 5
+while(i>=0){
+    Concat = Concat + i
+    i= i-1
+}
+
+console.log(Concat)
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
+
+let add = ""
+let k = 10
+
+while(k>=0){
+    if(k % 2 == 0){
+        add = add + k
+    }
+    k = k -1
+}
+
+console.log(add)
 
 // Comparisoin
 
@@ -29,10 +68,20 @@ for (let j = 0; j <= 10; ____) console.log(j);
 - `alert` true or false base on the entered value.
 - if the input value is anything like `true`, `null` or `undefined` alert saying `Enter a valid value`.
 
-
 Example:
 
 21, 21; // true
 "hello", -21; // false
 
 */
+
+
+var num1 = prompt("enter a number 1")
+var num2 = prompt("enter a number 2")
+if(num1 == num2){
+    alert("enter different data")
+}else if(Boolean(num1) == true && Boolean(num2) == true){
+    alert("True😍")
+}else{
+    alert("False😫")
+}
